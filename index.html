@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Mukherjee | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: #3b82f6;
+            bottom: -5px;
+            left: 0;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-blue-600">Varun.</a>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <p class="text-blue-600 font-semibold tracking-wide uppercase">Hi there, I am</p>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900">Varun Mukherjee</h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-slate-600">Software Engineer</h2>
+                <p class="text-lg text-slate-500 max-w-2xl leading-relaxed">
+                    I’m a software engineer who enjoys building systems that stay reliable under real-world scale — where correctness, security, and performance actually matter.<br>
+
+                    I often end up leading projects end-to-end: turning fuzzy problem statements into a clear design,  collaborating with the right folks, and shipping improvements.<br>
+
+                    📈 Along the way, I’ve helped drive measurable outcomes like ~98% fraud/suspicious activity flagging 🛡️, reducing missed customer value to ~5–10% 💸 in high-volume transactional workflows, 💳 Scaling a new PIN-based FinTech system to 100k+ transactions.<br>
+
+                    I care a lot about clean execution, good defaults, and systems that are easy to operate and evolve 🌱.
+                </p>
+                <div class="flex space-x-4 pt-4">
+                    <a href="mailto:varunmukherjee5@gmail.com" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-500/30">Get in touch</a>
+                    <a href="https://github.com/varunmukherjee1" target="_blank" class="p-3 text-slate-600 hover:text-slate-900 transition bg-white shadow-sm border border-slate-200 rounded-lg">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/varun-mukherjee-a68a121ba/" target="_blank" class="p-3 text-slate-600 hover:text-slate-900 transition bg-white shadow-sm border border-slate-200 rounded-lg">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold section-heading">Experience</h2>
+            
+            <div class="space-y-12 mt-8">
+                <!-- Motive (SWE) -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                    <div class="md:w-1/4 shrink-0 text-slate-500 font-medium">Jul 2024 - Present</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold text-slate-900">Software Engineer <span class="text-blue-600">@ Motive</span></h3>
+                        <p class="text-sm text-slate-500 mb-4">Pune, India</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li>Directed end-to-end engineering of a PIN-based transaction system eliminating app unlock friction in low-network areas, scaling to 25k+ active cards and 100k+ transactions in 4 months.</li>
+                            <li>Spearheaded a legacy roles and permissions architecture overhaul, authoring the TDD and securing 200+ endpoints across core Ruby on Rails APIs.</li>
+                            <li>Architected an org-wide auditing framework for internal admin tools, reducing incident debugging time by 40%.</li>
+                            <li>Orchestrated cross-functional policy migration abstracting 30+ complex settings into 4 core configurable policies.</li>
+                            <li>Developed automated POS transaction soft-decline flow blocking expensive merchants with 200-300ms latency at auth level.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Motive (Intern) -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                    <div class="md:w-1/4 shrink-0 text-slate-500 font-medium">Jan 2024 - Jul 2024</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold text-slate-900">Software Engineer Intern <span class="text-blue-600">@ Motive</span></h3>
+                        <p class="text-sm text-slate-500 mb-4">Pune, India</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li>Executed migration of background jobs from self-managed Beanstalkd/EC2 clusters to serverless AWS SQS via Shoryuken for 50+ core queues.</li>
+                            <li>Built a 'Missed Savings' tracker that increased driver app savings tool engagement by 25%.</li>
+                            <li>Integrated GasBuddy mapping 150,000+ fueling stops to optimize driver routes.</li>
+                            <li>Implemented granular card-level overrides for pre-transaction requirements, reducing support tickets by 20%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Polymath AI -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                    <div class="md:w-1/4 shrink-0 text-slate-500 font-medium">Jul 2023 - Jan 2024</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold text-slate-900">Full Stack Developer <span class="text-blue-600">@ Polymath AI</span></h3>
+                        <p class="text-sm text-slate-500 mb-4">Remote</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li>Engineered end-to-end architecture for 4 distinct AI tools utilizing Next.js (frontend) and Python/FastAPI (backend).</li>
+                            <li>Constructed scalable solutions maintaining an active monthly user base exceeding 10,000 users.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Unhired -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                    <div class="md:w-1/4 shrink-0 text-slate-500 font-medium">Jan 2023 - Apr 2023</div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold text-slate-900">Next.js Developer <span class="text-blue-600">@ Unhired</span></h3>
+                        <p class="text-sm text-slate-500 mb-4">Remote</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li>Served as founding engineer for a stealth startup, spearheading frontend development of the MVP using Next.js through rapid agile cycles.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold section-heading">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Scientific Document Retrieval System</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Solr</span>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">React.js</span>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Node.js</span>
+                    </div>
+                    <p class="text-slate-600">Engineered a rapid search engine, efficiently parsing and indexing a repository of 41,000+ scientific documents. Implemented query-specific scoring, ranking, and relevance feedback to optimize search precision.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Attendance Capturer and Manager</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">React.js</span>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Node.js</span>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">Express.js</span>
+                        <span class="text-xs font-semibold px-2 py-1 bg-slate-100 text-slate-600 rounded">MongoDB</span>
+                    </div>
+                    <p class="text-slate-600">Architected a full-stack digital attendance system utilizing a custom QR Code interface, achieving 100% elimination of paper usage. Collaborated within a 3-person team to maximize system reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Education Section -->
+    <section id="skills" class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Skills -->
+            <div>
+                <h2 class="text-3xl font-bold section-heading !after:bg-blue-400 mb-8">Technical Skills</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-300 mb-2">Languages</h4>
+                        <p class="text-slate-400">Ruby, Python, JavaScript, TypeScript, C/C++, SQL, Go, Java, GraphQL</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-300 mb-2">Backend & Cloud</h4>
+                        <p class="text-slate-400">Ruby on Rails, FastAPI, Node.js, Express.js, AWS</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-300 mb-2">Frontend</h4>
+                        <p class="text-slate-400">React.js, Next.js, Angular.js, Redux, Tailwind CSS, HTML/CSS</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-300 mb-2">Databases</h4>
+                        <p class="text-slate-400">PostgreSQL, MySQL, DynamoDB, Snowflake, MongoDB, Firestore</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-slate-300 mb-2">Tools, Testing & AI</h4>
+                        <p class="text-slate-400">Git, RSpec, Minitest, Shoryuken, LangChain, OpenAI API, Solr, Prisma, System Architecture</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h2 class="text-3xl font-bold section-heading !after:bg-blue-400 mb-8">Education</h2>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h3 class="text-xl font-bold text-white mb-2">Bachelor of Science in Computer Science</h3>
+                    <p class="text-blue-400 font-medium mb-4">Indian Institute of Information Technology (IIIT), Sri City</p>
+                    <p class="text-slate-400 text-sm mb-2">Dec 2020 - Jun 2024</p>
+                    <div class="inline-block px-3 py-1 bg-slate-700 text-slate-200 rounded text-sm font-semibold">
+                        CGPA: 9.22
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-12 bg-slate-950 text-center px-4">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold text-white mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="mailto:varunmukherjee5@gmail.com" class="text-slate-400 hover:text-white transition">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="https://github.com/varunmukherjee1" target="_blank" class="text-slate-400 hover:text-white transition">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/varun-mukherjee-a68a121ba/" target="_blank" class="text-slate-400 hover:text-white transition">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-slate-600 text-sm">
+                &copy; 2026 Varun Mukherjee. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
